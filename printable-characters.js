@@ -4,7 +4,7 @@ const ansiEscapeCode                   = '[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?
     , zeroWidthCharacterExceptNewline  = '\u0000-\u0008\u000B-\u0019\u001b\u009b\u00ad\u200b\u2028\u2029\ufeff'
     , zeroWidthCharacterDirectional    = '\u202a\u202b\u202c\u202d\u202e\u202f'
     , zeroWidthCharacter               = '\n' + zeroWidthCharacterExceptNewline + zeroWidthCharacterDirectional
-    , zeroWidthCharactersExceptNewline = new RegExp ('(?:' + ansiEscapeCode + ')|[' + zeroWidthCharacterExceptNewline + ']', 'g')
+    , zeroWidthCharactersExceptNewline = new RegExp ('(?:' + ansiEscapeCode + ')|[' + zeroWidthCharacterExceptNewline + zeroWidthCharacterDirectional + ']', 'g')
     , zeroWidthCharacters              = new RegExp ('(?:' + ansiEscapeCode + ')|[' + zeroWidthCharacter + ']', 'g')
     , partition                        = new RegExp ('((?:' + ansiEscapeCode + ')|[\t' + zeroWidthCharacter + '])?([^\t' + zeroWidthCharacter + ']*)', 'g')
 
