@@ -1,6 +1,6 @@
 {
   "name": "printable-characters-plus-directional",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "description": "A little helper for handling strings containing zero width control characters, ANSI styling, whitespaces, newlines, etc.",
   "main": "./build/printable-characters.js",
   "scripts": {
@@ -10,7 +10,8 @@
     "build": "npm run lint && npm run lint-test && npm run babel",
     "test": "npm run build && nyc --reporter=html --reporter=text mocha --reporter spec",
     "autotest": "mocha --reporter spec --watch",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
