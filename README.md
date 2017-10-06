@@ -1,3 +1,5 @@
+Forked from https://github.com/xpl/printable-characters
+
 # printable-characters
 
 [![Build Status](https://travis-ci.org/xpl/printable-characters.svg?branch=master)](https://travis-ci.org/xpl/printable-characters) [![Coverage Status](https://coveralls.io/repos/github/xpl/printable-characters/badge.svg)](https://coveralls.io/github/xpl/printable-characters) [![npm](https://img.shields.io/npm/v/printable-characters.svg)](https://npmjs.com/package/printable-characters) [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/xpl/printable-characters.svg)](https://scrutinizer-ci.com/g/xpl/printable-characters/?branch=master) [![dependencies Status](https://david-dm.org/xpl/printable-characters/status.svg)](https://david-dm.org/xpl/printable-characters)
